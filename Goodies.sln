@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Goodies", "Goodies.csproj", "{FB0AFAAB-3682-4B4E-936C-1162B8D52029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumindoWebAPI", "..\ConsumindoWebAPI\ConsumindoWebAPI.csproj", "{3A49313C-0A7E-40D4-9FF7-EFD9528FDE61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB0AFAAB-3682-4B4E-936C-1162B8D52029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0AFAAB-3682-4B4E-936C-1162B8D52029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0AFAAB-3682-4B4E-936C-1162B8D52029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0AFAAB-3682-4B4E-936C-1162B8D52029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A49313C-0A7E-40D4-9FF7-EFD9528FDE61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A49313C-0A7E-40D4-9FF7-EFD9528FDE61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A49313C-0A7E-40D4-9FF7-EFD9528FDE61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A49313C-0A7E-40D4-9FF7-EFD9528FDE61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5466D2F1-009D-410F-895E-1D15AC1A433E}
+	EndGlobalSection
+EndGlobal
