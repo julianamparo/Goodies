@@ -72,6 +72,13 @@ namespace Goodies.Models
             objDAL.ExecutarComandoSQL(sql);
         }
 
+        public void Excluir(int id)
+        {
+            DAL objDAL = new DAL();
+            string sql = $"Delete from Cliente where id = {id}";
+            objDAL.ExecutarComandoSQL(sql);
+        }
+
         public Cliente RetornarCliente(int id)
         {
             DAL objDAL = new DAL();
@@ -92,6 +99,7 @@ namespace Goodies.Models
                 Cep = dados.Rows[0]["Cep"].ToString(),
                 Logradouro = dados.Rows[0]["Logradouro"].ToString(),
                 Numero = dados.Rows[0]["Numero"].ToString(),
+                Complemento = dados.Rows[0]["Complemento"].ToString(),
                 Bairro = dados.Rows[0]["Bairro"].ToString(),
                 Cidade = dados.Rows[0]["Cidade"].ToString(),
                 UF = dados.Rows[0]["UF"].ToString()

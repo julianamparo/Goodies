@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Goodies.Util;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +28,11 @@ namespace Goodies
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddHttpContextAccessor();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSession();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,7 +41,9 @@ namespace Goodies
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
             }
+
 
             app.UseHttpsRedirection();
 
@@ -46,6 +55,9 @@ namespace Goodies
             {
                 endpoints.MapControllers();
             });
+
+
+
         }
     }
 }
